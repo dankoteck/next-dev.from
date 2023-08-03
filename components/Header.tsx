@@ -4,7 +4,7 @@ import { signIn, signOut } from "next-auth/react";
 
 export default function Header() {
   const handleLogin = () => {
-    signIn("github", { callbackUrl: "http://localhost:3000" });
+    signIn("github");
   };
 
   const handleSignout = () => {
